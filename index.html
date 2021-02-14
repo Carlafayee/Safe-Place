@@ -1,58 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Marlon</a>
-                </div>
+	<!-- =====BOX ICONS===== -->
+	<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                       
-                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                        <li class="nav__item"><a href="#signup" class="nav__link">Be a volunteer</a></li>
-                    </ul>
-                </div>
+	<title>Safe Space</title>
+</head>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
+<body>
+	<!--===== HEADER =====-->
+	<header class="l-header">
+		<nav class="nav bd-grid">
+			<div>
+				<a href="#" class="nav__logo">Safe Space</a>
+			</div>
+
+			<div class="nav__menu" id="nav-menu">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+					<li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+
+					<li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+					<li class="nav__item"><a href="#signup" class="nav__link">Be a volunteer</a></li>
+				</ul>
+			</div>
+
+			<div class="nav__toggle" id="nav-toggle">
+				<i class='bx bx-menu'></i>
                 </div>
             </nav>
         </header>
 
-        <main class="l-main">
+        <main class="l-main"> 
+          
+          <p id="homeRoundedRect"></p>
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
                     <h1 class="home__title">SAFE SPACE,<br>Everyone's <span class="home__title-color">Mental Health</span><br> deserves a safe space</h1>
 
-                    <a href="#" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="#services" class="button">Get Started</a>
                 </div>
 
                 <div class="home__img">    
                     <img src="assets/img/perfil2.png" alt="">
                 </div>
+               
+                </div>
+             
             </section>
 
             <!--===== ABOUT =====-->
@@ -65,45 +66,53 @@
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">I'am Marlon</h2>
-                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
+                        <h2 class="about__subtitle">Safe Space</h2>
+                        <p class="about__text">A place where you can speak up and have someone to talk to. Safe space for every conversation and every generation</p>           
                     </div>                                   
                 </div>
             </section>
-
-            <!--===== SKILLS =====-->
             
 
-            <!--===== WORK =====-->
+            <!--===== Services =====-->
             <section class="work section" id="services">
-                <h2 class="section-title">Work</h2>
+                <h2 class="section-title">Services</h2>
 
                 <div class="work__container bd-grid">
                     <div class="work__img">
-                        <a href ="talk.html"> 
-                             <img src="assets/img/work1.jpg" alt="talk">
+                        <a href ="localhost:3000/"> 
+                             <img src="assets/img/talk.png" alt="talk">
                             </a>
+                            <p class="services_title">Talk</p>
+                       <p class="services_description">Need someone to vent?</p>
                     </div>
                     <div class="work__img">
-                        <img src="assets/img/work2.jpg" alt="mood booster">
+                       <a href ="mood.html"> 
+                        <img src="assets/img/mood.png" alt="mood booster">
+                       </a>
+                       <p class="services_title">Mood Booster</p>
+                       <p class="services_description">Boost your mood</p>
                     </div>
                     <div class="work__img">
-                        <img src="assets/img/work3.jpg" alt="inspire">
+                       <a href ="inspire.html"> 
+                        <img src="assets/img/inspire.png" alt="inspire">
+                       </a>
+                       <p class="services_title">Inspire</p>
+                       <p class="services_description">Get inspired now</p>
                     </div>
                     
                 </div>
             </section>
 
-            <!--===== CONTACT =====-->
+            <!--===== Sign Up =====-->
             <section class="contact section" id="signup">
-                <h2 class="section-title">Contact</h2>
-
+                <h2 class="section-title">Be a Volunteer </h2>
+                
                 <div class="contact__container bd-grid">
                     <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
+                        <input type="text" placeholder="Name" class="contact__input"> <br>
+                        <input type="mail" placeholder="Email" class="contact__input"> <br>
+                        <input placeholder="Phone" type="tel" name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="" id="" cols="0" rows="10" class="contact__input"> <br><br><br>
+                        <input type="button" value="Sign Up" class="contact__button button">
                     </form>
                 </div>
             </section>
@@ -111,13 +120,13 @@
 
         <!--===== FOOTER =====-->
         <footer class="footer">
-            <p class="footer__title">Marlon</p>
+            <p class="footer__title">Safe Space</p>
             <div class="footer__social">
                 <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
                 <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
                 <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <p>&#169; 2020 copyright all right reserved</p>
+            <p>&#169; 2021 copyright all right reserved</p>
         </footer>
 
 
@@ -125,6 +134,7 @@
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
+        
         <script src="assets/js/main.js"></script>
     </body>
 </html>

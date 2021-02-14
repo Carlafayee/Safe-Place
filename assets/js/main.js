@@ -50,12 +50,71 @@ sr.reveal('.skills__text',{});
 sr.reveal('.skills__data',{interval: 200}); 
 sr.reveal('.skills__img',{delay: 600});
 
-/*SCROLL WORK*/
+/*SCROLL SERVICES*/
 sr.reveal('.work__img',{interval: 200}); 
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
 
+/*Mood booster slider*/
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
 
 
 
+let counter = 1;
+showTestimonials(counter);
+
+document.querySelector(".prev").addEventListener("click", () => {
+    computeTestimonials(-1)
+})
+
+document.querySelector(".next").addEventListener("click", () => {
+    computeTestimonials(1)
+})
+
+function computeTestimonials(t) {
+    showTestimonials((counter += t))
+}
+
+function showTestimonials(n) {
+  let i;
+  let testimonials = document.getElementsByClassName("testimonial");
+
+  if (n > testimonials.length) {
+    counter = 1;
+  }
+  if (n < 1) {
+    counter = testimonials.length;
+  }
+
+  for( i = 0; i < testimonials.length; i++){
+      testimonials[i].style.display = "none"
+  }
+
+  testimonials[counter - 1].style.display = "flex"
+}
